@@ -13,9 +13,4 @@ public class Main {
         iphone.getAllCharacteristics();
         iphone.powerOff();
     }
-
-
-
-
-
 }

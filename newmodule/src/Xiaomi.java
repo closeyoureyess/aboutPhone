@@ -43,6 +43,5 @@ public class Xiaomi extends Phone implements OtherActions {
         setPowerCPU(powerCPU);
         setScreenSize(screenSize);
     }
-
 }
 
