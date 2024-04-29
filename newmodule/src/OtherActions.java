@@ -7,4 +7,5 @@ public interface OtherActions {
     void call();
     String powerOn();
     String powerOff();
+
 }

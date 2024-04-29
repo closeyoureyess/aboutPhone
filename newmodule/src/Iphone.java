@@ -38,4 +38,5 @@ public class Iphone extends Phone implements OtherActions {
                 "Цвет телефона:" + getColour()+"\n"+"Емкость батареи, миллиампер/ч:" + getBattery()+"\n"+
                 "Мощность процессора:" + getPowerCPU()+"\n"+"Размер экрана:" + getScreenSize());
     }
+
 }

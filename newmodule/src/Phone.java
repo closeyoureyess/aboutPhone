@@ -37,4 +37,5 @@ public abstract class Phone {
     public void setScreenSize(String screenSize) {
         this.screenSize = screenSize;
     }
+
 }
