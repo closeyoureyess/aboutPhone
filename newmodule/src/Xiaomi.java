@@ -34,7 +34,6 @@ public class Xiaomi extends Phone implements OtherActions {
                 "Цвет телефона:" + getColour()+"\n"+"Емкость батареи, миллиампер/ч:" + getBattery()+"\n"+
                 "Мощность процессора:" + getPowerCPU()+"\n"+"Размер экрана:" + getScreenSize());
     }
-
     @Override
     public void setAllCharacteristics(String model, String battery, String colour, String powerCPU, String screenSize) {
         setModel(model);

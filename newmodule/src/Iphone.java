@@ -31,7 +31,6 @@ public class Iphone extends Phone implements OtherActions {
         setPowerCPU(powerCPU);
         setScreenSize(screenSize);
     }
-
     @Override
     public void getAllCharacteristics() {
         System.out.println("Модель телефона:" + getModel()+"\n"+

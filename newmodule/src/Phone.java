@@ -1,4 +1,5 @@
 public abstract class Phone {
+
     private String model, battery, colour, powerCPU, screenSize;
     public abstract void setAllCharacteristics(String model, String battery, String colour, String powerCPU, String screenSize);
     public abstract void getAllCharacteristics();
