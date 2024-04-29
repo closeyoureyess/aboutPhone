@@ -1,8 +1,16 @@
 import java.util.Objects;
-
 public class Xiaomi extends Phone implements OtherActions {
 
     private String message, status;
+
+    @Override
+    public String powerOn() {
+        return on;
+    }
+    @Override
+    public String powerOff() {
+        return off;
+    }
 
     @Override
     public void sendMessage(String message) {
@@ -11,32 +19,29 @@ public class Xiaomi extends Phone implements OtherActions {
     }
 
     @Override
-    public void power(String status) {
-        //this.status = "Включен";
-        if(on.equals(status)){
-            System.out.println("Устройство включено");
-        }
-        else{
-            System.out.println("Тест");
-        }
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Xiaomi xiaomi = (Xiaomi) o;
-        return Objects.equals(message, xiaomi.message) && Objects.equals(status, xiaomi.status);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(message, status);
-    }
-
-    @Override
     public void soundTurnOn() {
         System.out.println("Din-Don");
+    }
+
+    @Override
+    public void call() {
+        System.out.println("Звонок по телефону");
+    }
+
+    @Override
+    public void getAllCharacteristics() {
+        System.out.println("Модель телефона:" + getModel()+"\n"+
+                "Цвет телефона:" + getColour()+"\n"+"Емкость батареи, миллиампер/ч:" + getBattery()+"\n"+
+                "Мощность процессора:" + getPowerCPU()+"\n"+"Размер экрана:" + getScreenSize());
+    }
+
+    @Override
+    public void setAllCharacteristics(String model, String battery, String colour, String powerCPU, String screenSize) {
+        setModel(model);
+        setBattery(battery);
+        setColour(colour);
+        setPowerCPU(powerCPU);
+        setScreenSize(screenSize);
     }
 }
 
